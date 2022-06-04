@@ -1,0 +1,85 @@
+{% extends 'student/studentbase.html' %}
+{% block content %}
+{%load static%}
+
+<head>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <style media="screen">
+    a:link {
+      text-decoration: none;
+    }
+
+    h6 {
+      text-align: center;
+    }
+
+    .row {
+      margin: 100px;
+    }
+  </style>
+</head>
+<br><br>
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h6 class="panel-title">Frequently Asked Questions</h6>
+    </div>
+     <p style="padding: 10px;"><b>Note: </b>Please read these through carefully as you may find your question answered here. If you have a specific question that is not covered in this information, please e-mail <a href="mailto:uietcse1822aditisingh@kuk.ac.in">uietcse1822aditisingh@kuk.ac.in</a> or <a href="mailto:uietcse1822simran1@kuk.ac.in">uietcse1822simran1@kuk.ac.in</a></p>
+    <table class="table table-hover table-bordered  table-striped" id="dev-table">
+      <tr>
+        <td><i class="fas fa-arrow-right"> <b> I am unsure about using an online system I haven’t used before. Is there any way of previewing the software prior to launch day? </b></td>
+      </tr>
+      <tr>
+        <td>Yes, you can attempt the mock tests available on the student dashboard to get familiar with the exam pattern and software.</td>
+      </tr>
+
+      <tr>
+        <td><i class="fas fa-arrow-right">  <b>How do I know about the exam schedule?</b></td>
+      </tr>
+      <tr>
+        <td>The schedule for all your upcoming examinations are available in the Exam Schedule section</td>
+      </tr>
+
+      <tr>
+        <td><i class="fas fa-arrow-right"> <b>My internet connection at home is really poor. What other options do I have?</b></td>
+      </tr>
+      <tr>
+        <td>If your internet connection is not reliable enough to take an examination, you can see if your institution has the facilities to take the examination there. If this is not possible, then we suggest contacting a friend or family member who has a stable internet connection to allow you to take the exam at their house. You will also need to ensure that they are able to provide a quiet environment where you will not be disturbed for the duration of your examination.</td>
+      </tr>
+
+      <tr>
+        <td><i class="fas fa-arrow-right"> <b>Will I be able to go back and edit answers? </b></td>
+      </tr>
+      <tr>
+        <td>For the majority of MCQ examinations, no, you can't navigate back to the previous question so we suggest you to kindly take a better look at your question and answer before moving further.</td>
+      </tr>
+
+      <tr>
+        <td><i class="fas fa-arrow-right"> <b>Do I have access to the previous year question papers ?</b></td>
+      </tr>
+      <tr>
+        <td>Yes, You can view it in the sample paper section</td>
+      </tr>
+
+      <tr>
+        <td><i class="fas fa-arrow-right"> <b>What if I finish my examination early?</b></td>
+      </tr>
+      <tr>
+        <td>If you finish your examination early, you can submit your answers and leave as you would do when sitting in an examination hall. The system will ask if you are sure you wish to submit the exam early, and will bring to your attention any unanswered or flagged questions. Once you have submitted and logged out, you will not be able to log back in.</td>
+      </tr>
+
+      <tr>
+        <td><i class="fas fa-arrow-right"> <b>I type really slowly and can write much faster so I am worried that I will not be able to answer all the questions in the time allowed. </b></td>
+      </tr>
+      <tr>
+        <td>We would encourage you to practice typing if you are sitting an essay paper where longer answers are required. However, even with a very slow typing speed it is expected candidates will have enough time to complete the question/s. Remember, quality is far more important than quantity. For short answer questions, you will not be required to write more than a few sentences for your answers.</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<br><br><br><br><br><br>
+{% endblock content %}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{% load widget_tweaks %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style>
+
+        form{
+           margin: 50px; 
+          
+        }
+        
+    </style>
+  </head>
+  <body style="margin-bottom:0px; background-color: #b0f5f3;">
+    {% include "exam/navbar.html" %}
+ 
+
+
+<br><br><br>
+
+<div class="container">
+  <h1 class="display-4" align="center"><i class="fa fa-graduation-cap" aria-hidden="true"></i></h1>
+    <h1 class="display-4" align="center"> Welcome to Student Login Page</h1>
+    <hr class="my-4"><!-- 
+    <p class="lead" align="center">To register yourself, enter your details below:</p> -->
+  </div>
+
+
+<div class="container jumbotron">
+  <h3 style="text-align: center;">To register yourself, enter your details below:</h3>
+<form method="POST" autocomplete="off" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="first_name">First Name</label>
+          {% render_field userForm.first_name|attr:'required:true'  class="form-control" placeholder="First Name" %}
+        </div>
+        <div class="form-group col-md-6">
+          <label for="last_name">Last Name</label>
+          {% render_field userForm.last_name|attr:'required:true'  class="form-control" placeholder="Last Name" %}
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="mobile">Contact</label>
+          {% render_field teacherForm.mobile|attr:'required:true'  class="form-control" placeholder="Contact Number" %}
+        </div>
+        <div class="form-group col-md-6">
+          <label for="address">Address</label>
+          {% render_field teacherForm.address|attr:'required:true'  class="form-control" placeholder="Address" %}
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="username">Username</label>
+          {% render_field userForm.username|attr:'required:true'  class="form-control" placeholder="Username" %}
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Password</label>
+          {% render_field userForm.password|attr:'required:true'  class="form-control" placeholder="Password" %}
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="profile_pic">Profile Picture</label>
+          {% render_field teacherForm.profile_pic|attr:'required:true' class="form-control" placeholder="" %}
+        </div>
+        
+      </div>
+
+
+    <button type="submit" class="btn btn-primary" style="border-radius: 0%;">Register</button>
+    <a class="btn btn-success " href="studentlogin" style="border-radius: 0%;" role="button">Login</a>
+  </form>
+</div>
+
+
+<br><br>
+{% include "exam/footer.html" %}
+  </body>
+</html>

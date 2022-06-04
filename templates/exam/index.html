@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+
+<style>
+  .jumbotron{
+    margin-bottom: 0px;
+    /*background-image: url("{% static "background.jpeg" %}");*/
+    background-color:#88d1b8 !important; 
+    background-size: cover;
+    /*height: 100%;*/
+    height:770px;
+  }
+  body{
+    /*background-image: url("{% static "background.jpeg" %}");*/
+    background: #426b5d;
+    background-size: cover;
+    height: 100%;
+  }
+
+
+  .left-panel
+{        
+    width:50%;
+    height:100px;
+    float:left;
+    padding: 40px;            
+}
+.right-panel
+{        
+    width:50%;
+    height:100px;
+    float:right;
+    padding: 40px;
+}
+
+</style>
+<body style="background-color: black;">
+  {% include "exam/navbar.html" %}
+
+<br>
+<section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center" style="height:770px;" >
+  <div class="container text-center">
+    <h1 class="display-4 d-none d-sm-block" style="color: black;">Welcome to<b> Pareeksha! </b></h1>
+    <p class="display-4 d-none d-sm-block" style="color: black;">The best Online Examination Center</p>
+    <p class="lead" style="color: black;">May you enjoy your ride !</p>
+
+  
+    <p style="color: black;"><strong>Register or Sign in to avail the services</strong></p>
+   <!--  <a href="/student/studentsignup" class="btn btn-lg btn-info" style="padding-right: 35px; border-radius: 0%;"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Sign Up as Student</a> -->
+   <a href="/student/studentsignup" class="btn btn-lg btn-info" style="padding-right: 35px; border-radius: 0%;"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Student Login</a>
+
+   <a href="/teacher/teachersignup" class="btn btn-lg btn-warning" style="padding-right: 35px; border-radius: 0%;"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Professor Login</a>   <a href="/adminclick" class="btn btn-lg btn-success" style="padding-right: 35px; border-radius: 0%;"><i class="fa fa-id-badge" aria-hidden="true"></i> Faculty Incharge</a>
+    
+  </div>  
+</section>
+
+
+<section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center" >
+  <div class="container text-center">
+    <br><br>
+    <h2 class="display-4 d-none d-sm-block" style="color: black;"><b> About Pareeksha! </b></h2>
+    <br>
+    <p class="lead" style="color: black;"><b>Pareeksha</b> is a cost-effective, scalable way to convert traditional pen and paper-based exams to online and paperless mode. Candidates can appear for the exam using any desktop or laptop. It is the complete agenda of an online-based test that has got multiple features and functionalities. This website uses online exam software through which the tests are created, conducted, and also evaluated. This is the best way to conduct exams as schools, universities, and other institutions don’t have to invest in examination centers, invigilators, and security.</p>
+    <br><br>
+    <h2 class="display-4 d-none d-sm-block" style="color: black;"><b> Why use Pareeksha ?</b></h2>
+
+    <br>
+    <p class="lead" style="color: black;"><b>Pareeksha</b> provides flexibility and security to the examination process. It results are calculated instantly and accurately. In an online examination system such as <b>Pareeksha</b>, the exam can be conducted wherever the candidate is and the exam surveillance can be conducted with the help of a web camera and microphone. This website is also useful in keeping the logistics cost minimum.<br><br>It is compatible for both subjective and objective examination. Online Exam can be managed in auto surveillance mode where a web camera connected to the system would take snapshots of the student for the exam and can act as an invigilator/supervisor; which is again cost and time efficient. Designing a question paper for a digital exam is relatively easy and it also reduces the chances of paper leakage.</p>
+    
+    
+    <br><br><br>
+  </div>  
+</section>
+
+  {% include "exam/footer.html" %}
+
+
+
+</body>
+
+</html>
+
+
+
+
+
