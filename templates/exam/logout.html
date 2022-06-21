@@ -4,24 +4,38 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <style>
+    body{
+    background-image: url("{% static "background1.jpg" %}");
+    background-size: cover;
+    height: 100%;
+        }
+    </style>
+
+  </head>
   </head>
   <body>
     {% include "exam/navbar.html" %}
     <br><br><br><br><br>
+
 <!-- <img src="{% static "image/logout_img.png" %}"  style="width:800px; height:100px; padding-left:400px;"> -->
 <style>
 h1,
 h3 {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 30px;
 }
 </style>
-<h3 class="text-center">Logged Out Successfully.</h3> <br>
+<br><br><br><br><br><br>
+<h3 class="text-center">Logged Out Successfully.</h3> 
 <h1 align="center">Thank you for using <b> Pareeksha :) </b></h1>
+<h3 class="text-center">Hope to meet you soon</h3> 
 
 <br><br><br><br><br>
 <br><br><br><br><br>
-<br><br>
+<br>
+
+
 {% include "exam/footer.html" %}
 
   </body>

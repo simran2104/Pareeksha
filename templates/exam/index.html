@@ -6,14 +6,25 @@
 <style>
   .jumbotron{
     margin-bottom: 0px;
-    /*background-image: url("{% static "background.jpeg" %}");*/
+    background-image: url("{% static "image.png" %}");
     background-color:#88d1b8 !important; 
     background-size: cover;
+    font-weight: 500;
     /*height: 100%;*/
     height:770px;
   }
+   .why{
+       background-image: url("{% static "why us.png" %}");
+       width: auto;
+       height:900px;
+     }
+     .about{
+       background-image: url("{% static "about.png" %}");
+       width: auto;
+       height:900px;
+     }
   body{
-    /*background-image: url("{% static "background.jpeg" %}");*/
+    background-image: url("{% static "background.jpeg" %}");
     background: #426b5d;
     background-size: cover;
     height: 100%;
@@ -36,7 +47,7 @@
 }
 
 </style>
-<body style="background-color: black;">
+<body style="background-color: black; ">
   {% include "exam/navbar.html" %}
 
 <br>
@@ -57,13 +68,23 @@
 </section>
 
 
-<section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center" >
-  <div class="container text-center">
+<section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center about" >
+ <!--  <div class="container text-center">
     <br><br>
     <h2 class="display-4 d-none d-sm-block" style="color: black;"><b> About Pareeksha! </b></h2>
     <br>
     <p class="lead" style="color: black;"><b>Pareeksha</b> is a cost-effective, scalable way to convert traditional pen and paper-based exams to online and paperless mode. Candidates can appear for the exam using any desktop or laptop. It is the complete agenda of an online-based test that has got multiple features and functionalities. This website uses online exam software through which the tests are created, conducted, and also evaluated. This is the best way to conduct exams as schools, universities, and other institutions don’t have to invest in examination centers, invigilators, and security.</p>
     <br><br>
+    
+    <br><br><br>
+  </div>   -->
+</section>
+
+<section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center why"  >
+  
+<!--   <div class="container text-center">
+    <br><br>
+  
     <h2 class="display-4 d-none d-sm-block" style="color: black;"><b> Why use Pareeksha ?</b></h2>
 
     <br>
@@ -71,7 +92,7 @@
     
     
     <br><br><br>
-  </div>  
+  </div>   -->
 </section>
 
   {% include "exam/footer.html" %}
