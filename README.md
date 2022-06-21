@@ -1,2 +1,2 @@
-# Pareeksha
+# 🎓Pareeksha🎓
 An Online Examination Software
